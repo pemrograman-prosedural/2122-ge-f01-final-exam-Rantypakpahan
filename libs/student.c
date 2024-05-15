@@ -12,7 +12,7 @@ void assign_student(struct student_t *student, struct dorm_t *dorm)
         dorm->residents_num+= 1;
     }
 }
-
+ 
 
 void move_student(struct student_t *student, struct dorm_t *dorm, struct dorm_t *_dorm)
 {
