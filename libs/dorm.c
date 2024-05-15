@@ -8,7 +8,7 @@ void addDorm(struct dorm_t *dorm, int *banyak_dorm, char *input) {
     char *name = strtok(NULL, "#");
     char *capacity = strtok(NULL, "#");
     char *gender = strtok(NULL, "#");
- 
+   
     strcpy(dorm[*banyak_dorm].name, name);
     dorm[*banyak_dorm].capacity = atoi(capacity);
 

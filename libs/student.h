@@ -24,6 +24,7 @@ void assign_student(struct student_t *student, struct dorm_t *dorm);
 void addStudent(struct student_t *student, int *student_num, char *input);
 void printAllStudents(struct student_t *student, int student_num);
 void printAllStudentDetails(struct student_t *student, int student_num);
+void leave_student(struct student_t *student, struct dorm_t *dorm);
 
 
 #endif

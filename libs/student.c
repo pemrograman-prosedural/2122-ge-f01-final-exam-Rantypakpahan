@@ -12,7 +12,15 @@ void assign_student(struct student_t *student, struct dorm_t *dorm)
         dorm->residents_num+= 1;
     }
 }
- 
+
+void leave_student(struct student_t *student, struct dorm_t *dorm)
+{
+    if (dorm->capacity > dorm->residents_num && student->gender == dorm->gender)
+    {
+        student->dorm = dorm;
+        dorm->residents_num-= 1;
+    }
+}
 
 void move_student(struct student_t *student, struct dorm_t *dorm, struct dorm_t *_dorm)
 {
